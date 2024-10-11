@@ -10,7 +10,7 @@ def contacts(request):
 
 
 def info(request):
-    print('Request method:', request.method)  # Должен выводить POST, если форма отправлена
+    print('Request method:', request.method)
     if request.method == 'POST':
         print("POST Data:", request.POST)
         name = request.POST.get('name')
